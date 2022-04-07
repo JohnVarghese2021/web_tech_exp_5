@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex5(1)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="newjavascript.js"></script>
+    </head>
+    <body bgcolor="cyan">        
+        <!-- Shortest and Longest -->
+        <fieldset>
+        <legend>Part 1</legend>
+        <h1>Shortest and Longest word within the string</h1>
+        <br>
+        Enter the String: <input type="text" id="text" /><br/>
+        <button onclick="fun();">Find</button><br>
+        <br>
+        <div id="result"> </div>  
+        </fieldset><br>
+        <!-- BMI -->
+        <fieldset> 
+            <legend>Part 2</legend>
+            <h1>Calculate your Body Mass Index (BMI)!</h1> 
+            <br>
+            Weight (in kg): <input type="text" id="weight" /><br/><br/> 
+            Height (in mt): <input type="text" id="height" /><br/><br/> 
+            <button onclick="calculate();">Get BMI!</button><br><br> 
+            <div id="result"> </div>
+        </fieldset><br>
+        <!-- Fruit Farm -->
+        <fieldset>
+            <legend>Part 3</legend>
+            <h1>Fruit Farm</h1> 
+            <br>
+            Rows: <input type="text" id ="rows" /> 
+            Columns: <input type="text" id ="columns" /> <br /> 
+            Select Image: 
+            <select id ="fruit">
+                <option> Apple </option> 
+                <option> Orange </option>
+                <option> Both </option>
+            </select> 
+            <br><br><br><br>
+            <button onclick="grow();">Plant Garden</button> 
+             <div id="garden"><br><br></div>
+        </fieldset>
+        <fieldset> 
+            <legend>Part 4</legend>
+            <h1>The Currency Convertor</h1>
+            <br>
+            Convert <input type="text" id="data" /> 
+            <br><br>
+            from
+            <select id="from"> 
+                <option>Indian Rupee</option> 
+                <option>US Dollar</option> 
+            </select> 
+            to 
+            <select id ="to">
+                <option> US Dollar </option> 
+                <option> Indian Rupee </option>
+            </select> 
+            <br><br>
+            <button onclick="convert();">Calculate</button> <span id="answer"></span> 
+        </fieldset><br>
+        <fieldset>
+            <legend>Part 5</legend>
+        <h1>Heads or Tails?</h1> 
+        <div> 
+            <button onclick="flip()" id="flip">Flip!</button> 
+        </div> 
+        <div id="coin"> </div>
+        <p> 
+            <br>Heads Total: <span id="num_heads">0</span><br /><br>
+            Tails Total: <span id="num_tails">0</span> 
+        </p>
+
+        </fieldset> 
+        
+        <fieldset>
+            <legend>Part 6</legend>
+            <h1>Cake Order Form</h1> 
+            <fieldset> 
+                # of 1/2kg Cakes <input type="text" id="small" /><br /> 
+                # of 1kg Cakes <input type="text" id="medium" /><br /> 
+                # of 2kg Cakes <input type="text" id="large" /><br /> 
+                <br>
+                Tip: 
+                <label><input type="radio" value="10" name="tip" /> 10%</label> 
+                <label><input type="radio" value="15" name="tip" checked="checked" /> 15% </label> <label><input type="radio" value="20" name="tip" /> 20%</label> <br /> 
+                <br><button id="submit" onclick="calc();">Calculate Order</button> 
+            </fieldset> 
+            <p >
+                Cost of order: <span id="price"></span> 
+            <p>
+
+
+        </fieldset>
+    </body>
+</html>
